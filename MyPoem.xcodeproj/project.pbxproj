@@ -12,9 +12,14 @@
 		359EF500215BBE740003DFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359EF4FE215BBE740003DFC3 /* Main.storyboard */; };
 		359EF502215BBE750003DFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359EF501215BBE750003DFC3 /* Assets.xcassets */; };
 		359EF505215BBE750003DFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359EF503215BBE750003DFC3 /* LaunchScreen.storyboard */; };
+		359EF50D215BCB600003DFC3 /* PoemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359EF50C215BCB600003DFC3 /* PoemModel.swift */; };
+		359EF50F215BD3420003DFC3 /* china.json in Resources */ = {isa = PBXBuildFile; fileRef = 359EF50E215BD3420003DFC3 /* china.json */; };
+		384DC63B4C0688871B3CEB3C /* Pods_MyPoem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12EBA1D6F46CDCA571AD0DCC /* Pods_MyPoem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F42E18938B0DFB2E8F61ED6 /* Pods-MyPoem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPoem.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPoem/Pods-MyPoem.release.xcconfig"; sourceTree = "<group>"; };
+		12EBA1D6F46CDCA571AD0DCC /* Pods_MyPoem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPoem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		359EF4F7215BBE740003DFC3 /* MyPoem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPoem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359EF4FA215BBE740003DFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359EF4FC215BBE740003DFC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		359EF501215BBE750003DFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359EF504215BBE750003DFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		359EF506215BBE750003DFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359EF50C215BCB600003DFC3 /* PoemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemModel.swift; sourceTree = "<group>"; };
+		359EF50E215BD3420003DFC3 /* china.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = china.json; sourceTree = "<group>"; };
+		8BFB9987F9D0F037D61C4C50 /* Pods-MyPoem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPoem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPoem/Pods-MyPoem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384DC63B4C0688871B3CEB3C /* Pods_MyPoem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D414425A6F660521AEAB7FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BFB9987F9D0F037D61C4C50 /* Pods-MyPoem.debug.xcconfig */,
+				0F42E18938B0DFB2E8F61ED6 /* Pods-MyPoem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		359EF4EE215BBE740003DFC3 = {
 			isa = PBXGroup;
 			children = (
 				359EF4F9215BBE740003DFC3 /* MyPoem */,
 				359EF4F8215BBE740003DFC3 /* Products */,
+				0D414425A6F660521AEAB7FC /* Pods */,
+				53C1AD8799C153E713099C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				359EF4FA215BBE740003DFC3 /* AppDelegate.swift */,
+				359EF50C215BCB600003DFC3 /* PoemModel.swift */,
 				359EF4FC215BBE740003DFC3 /* ViewController.swift */,
 				359EF4FE215BBE740003DFC3 /* Main.storyboard */,
 				359EF501215BBE750003DFC3 /* Assets.xcassets */,
+				359EF50E215BD3420003DFC3 /* china.json */,
 				359EF503215BBE750003DFC3 /* LaunchScreen.storyboard */,
 				359EF506215BBE750003DFC3 /* Info.plist */,
 			);
 			path = MyPoem;
+			sourceTree = "<group>";
+		};
+		53C1AD8799C153E713099C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12EBA1D6F46CDCA571AD0DCC /* Pods_MyPoem.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 359EF509215BBE750003DFC3 /* Build configuration list for PBXNativeTarget "MyPoem" */;
 			buildPhases = (
+				EE5853837606DD491E20708B /* [CP] Check Pods Manifest.lock */,
 				359EF4F3215BBE740003DFC3 /* Sources */,
 				359EF4F4215BBE740003DFC3 /* Frameworks */,
 				359EF4F5215BBE740003DFC3 /* Resources */,
+				4D79179204CA820568244D32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +155,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				359EF505215BBE750003DFC3 /* LaunchScreen.storyboard in Resources */,
+				359EF50F215BD3420003DFC3 /* china.json in Resources */,
 				359EF502215BBE750003DFC3 /* Assets.xcassets in Resources */,
 				359EF500215BBE740003DFC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D79179204CA820568244D32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyPoem/Pods-MyPoem-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPoem/Pods-MyPoem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5853837606DD491E20708B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPoem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		359EF4F3215BBE740003DFC3 /* Sources */ = {
@@ -137,6 +211,7 @@
 			files = (
 				359EF4FD215BBE740003DFC3 /* ViewController.swift in Sources */,
 				359EF4FB215BBE740003DFC3 /* AppDelegate.swift in Sources */,
+				359EF50D215BCB600003DFC3 /* PoemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +353,7 @@
 		};
 		359EF50A215BBE750003DFC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BFB9987F9D0F037D61C4C50 /* Pods-MyPoem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +372,7 @@
 		};
 		359EF50B215BBE750003DFC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F42E18938B0DFB2E8F61ED6 /* Pods-MyPoem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_MyPoem {
+  umbrella header "Pods-MyPoem-umbrella.h"
+
+  export *
+  module * { export * }
+}
